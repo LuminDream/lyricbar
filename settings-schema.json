@@ -1,0 +1,70 @@
+{
+    "section1": {
+        "type": "section",
+        "description": "显示"
+    },
+    "mode": {
+        "type": "combobox",
+        "default": "auto",
+        "description": "显示模式",
+        "options": {
+            "自动折叠（推荐）": "auto",
+            "完整：歌词+三键": "full",
+            "紧凑：歌词+播放键": "compact",
+            "仅图标+播放键": "mini"
+        }
+    },
+    "lyricWidth": {
+        "type": "spinbutton",
+        "default": 220,
+        "min": 100,
+        "max": 360,
+        "step": 10,
+        "description": "歌词最大宽度（逻辑像素）"
+    },
+    "showArt": {
+        "type": "switch",
+        "default": true,
+        "description": "显示音乐图标"
+    },
+    "autoHide": {
+        "type": "switch",
+        "default": true,
+        "description": "无播放时自动隐藏（暂停仍显示）"
+    },
+
+    "section2": {
+        "type": "section",
+        "description": "歌词来源"
+    },
+    "localFirst": {
+        "type": "switch",
+        "default": true,
+        "description": "优先使用本地 .lrc"
+    },
+    "onlineLyrics": {
+        "type": "switch",
+        "default": true,
+        "description": "允许联网搜索歌词（LRCLIB / 网易云）"
+    },
+    "showTranslation": {
+        "type": "switch",
+        "default": false,
+        "description": "有译文时显示译文（如有）"
+    },
+
+    "section3": {
+        "type": "section",
+        "description": "播放器"
+    },
+    "preferredPlayer": {
+        "type": "entry",
+        "default": "",
+        "description": "优先播放器（留空=自动选择正在播放的）"
+    },
+    "scrollSeek": {
+        "type": "switch",
+        "default": true,
+        "description": "滚轮快进/快退（±5 秒）"
+    }
+}

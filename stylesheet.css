@@ -1,0 +1,90 @@
+/* 状态栏歌词插件 — 状态栏歌词
+ * 胶囊式布局：圆角半透明底、左侧图标、单行歌词、右侧媒体控件。
+ * 字体族/字重不写死 → 继承 #panel 系统字体（与时钟、系统监控插件保持一致）。
+ * 颜色用半透明白，暗色/亮色面板都能看。
+ */
+
+.lyricbar-applet {
+    padding: 0;
+    spacing: 0;
+}
+
+.lyricbar-root {
+    padding: 0;
+    spacing: 0;
+}
+
+/* 胶囊主体 */
+.lyricbar-pill {
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 10px;
+    padding: 0 7px;
+    spacing: 6px;
+}
+
+.lyricbar-pill:hover {
+    background-color: rgba(255, 255, 255, 0.13);
+    border-color: rgba(255, 255, 255, 0.20);
+}
+
+/* 左侧音乐图标 */
+.lyricbar-art {
+    color: #8fc1f2;
+    padding: 0;
+}
+
+/* 单行歌词 */
+.lyricbar-lyric {
+    color: rgba(255, 255, 255, 0.93);
+    padding: 0;
+}
+
+.lyricbar-lyric-idle {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+/* 歌词与控件之间的细分隔线 */
+.lyricbar-sep {
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+/* 控件容器 */
+.lyricbar-controls {
+    spacing: 1px;
+    padding: 0;
+}
+
+/* 图标按钮 */
+.lyricbar-btn {
+    border-radius: 6px;
+    padding: 2px;
+    color: rgba(255, 255, 255, 0.82);
+    background-color: transparent;
+    border: 0;
+}
+
+.lyricbar-btn:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.lyricbar-btn:active {
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+/* 播放/暂停键：强调色 */
+.lyricbar-btn-main {
+    color: #7dc4ff;
+}
+
+.lyricbar-btn-main:hover {
+    background-color: rgba(125, 196, 255, 0.20);
+    color: #a8dbff;
+}
+
+/* 不可用状态（无播放器） */
+.lyricbar-btn-disabled {
+    color: rgba(255, 255, 255, 0.28);
+}

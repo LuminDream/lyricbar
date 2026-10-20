@@ -1,0 +1,9 @@
+{
+    "uuid": "lyricbar@local",
+    "name": "状态栏歌词插件",
+    "description": "Cinnamon 面板单行歌词与媒体控制：本地/在线歌词、按实时音频自动显示隐藏、空间不足自动折叠。",
+    "version": "1.1.0",
+    "max-instances": 1,
+    "author": "lyricbar",
+    "last-edited": 1760000000
+}
